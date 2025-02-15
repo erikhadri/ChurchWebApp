@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Global Christians </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Navigation Bar -->
+      <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+      </a>
+      
+      <!-- Hamburger Button -->
+      <button id="menu-toggle" type="button" class="md:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="navbar">
+        <ul class="flex flex-col md:flex-row md:space-x-4 font-medium mt-4 md:mt-0 bg-gray-50 dark:bg-gray-800 md:bg-transparent md:dark:bg-transparent">
+          <li><a href="index.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Home</a></li>
+          <li><a href="email-courses.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Email Courses</a></li>
+          <li><a href="ebooks.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">E-books</a></li>
+          <li><a href="bible-studies.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Bible Studies</a></li>
+          <li><a href="articles.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Articles</a></li>
+          <li><a href="prayer.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Prayer</a></li>
+          <li><a href="contact.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+  
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+    });
+  </script>
+  
+
+    <!-- Hero Section -->
+    <section class="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-700 text-center px-6 py-24">
+        <!-- Parallax Background -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?church,worship'); filter: brightness(0.5);"></div>
+
+        <!-- Content Container with Glassmorphism Effect -->
+        <div class="relative bg-white/20 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-xl border border-white/40 max-w-3xl w-full">
+            <h1 class="text-4xl sm:text-7xl font-extrabold mb-6 text-yellow-400 drop-shadow-lg">
+                Church <br class="hidden sm:block"> Articles
+            </h1>
+            <p class="text-lg sm:text-2xl mb-6 font-light text-white">A place of faith, hope, and love.</p>
+            <a href="#articlesSec"
+                class="relative inline-block bg-gradient-to-r from-yellow-500 to-yellow-400 text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold shadow-xl text-lg sm:text-xl transition-transform duration-300 hover:scale-105">
+                <span class="relative z-10">Read Church Articles</span>
+                <div class="absolute inset-0 bg-white opacity-20 rounded-full blur-lg"></div>
+            </a>
+        </div>
+    </section>
+
+
+
+<section class="py-24 px-8 bg-gray-800">
+    <h2  class="text-6xl font-bold text-yellow-400 text-center mb-8">Church Articles</h2>
+    <div id="articlesSec" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">1 and 2 Thessalonians</h3>
+            <p class="text-gray-400">1 and 2 Thessalonians_Final</p>
+            <a href="https://globalchristians.org/pdf/1%20and%202%20Thessalonians_Final.pdf"  class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Peter and Jude Bible Study</h3>
+            <p class="text-gray-400">Peter and Jude Bible Study</p>
+            <a href="https://globalchristians.org/pdf/2_Peter_and_Jude_Bible_Study.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">A Glimpse of Glory</h3>
+            <p class="text-gray-400">A Glimpse of Glory</p>
+            <a href="https://globalchristians.org/pdf/A%20Glimpse%20Of%20Glory%2016-06-15.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Acts 1 to 8</h3>
+            <p class="text-gray-400">Acts 1 to 8</p>
+            <a href="https://globalchristians.org/pdf/acts1_to_8.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Altar Counselor's Guide</h3>
+            <p class="text-gray-400">Altar Counselor's Guide</p>
+            <a href="https://globalchristians.org/pdf/AltarCounselorsGuide_SUP.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Amos Bible Studies</h3>
+            <p class="text-gray-400">Amos Bible Studies.</p>
+            <a href="https://globalchristians.org/pdf/AmosBibleStudies.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Angels of God</h3>
+            <p class="text-gray-400">Angels of God</p>
+            <a href="https://globalchristians.org/pdf/AngelsOfGod.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Basic Bible Survey</h3>
+            <p class="text-gray-400">Basic Bible Survey - Old Testament</p>
+            <a href="https://globalchristians.org/pdf/otsurvey.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Basic Bible Survey</h3>
+            <p class="text-gray-400">Basic Bible Survey - New Testament</p>
+            <a href="https://globalchristians.org/pdf/ntsurvey.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Battle for the Body</h3>
+            <p class="text-gray-400">Battle for the Body.</p>
+            <a href="https://globalchristians.org/pdf/battle-for-body.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Beyond Denominations</h3>
+            <p class="text-gray-400">Beyond Denominations</p>
+            <a href="https://globalchristians.org/pdf/beyond_denomination.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Biblical EQ Emotions</h3>
+            <p class="text-gray-400">Biblical EQ (Emotions)</p>
+            <a href="https://globalchristians.org/pdf/biblicaleq.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Biblical Management Principles</h3>
+            <p class="text-gray-400">Biblical Management Principles</p>
+            <a href="https://globalchristians.org/pdf/biblical-management-principles.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Biblical Numbers</h3>
+            <p class="text-gray-400">Biblical Numbers</p>
+            <a href="https://globalchristians.org/pdf/BookBiblicalNumbers_SUP.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Biblical Theology</h3>
+            <p class="text-gray-400">Biblical Theology</p>
+            <a href="https://globalchristians.org/pdf/Biblical%20Theology.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+        </div>
+<!-- Add more PDFs as needed -->
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Biblical World View</h3>
+    <p class="text-gray-400">Biblical World View</p>
+    <a href="https://globalchristians.org/pdf/biblical-worldview.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Biblical Worship</h3>
+    <p class="text-gray-400">Biblical Worship</p>
+    <a href="https://globalchristians.org/pdf/BIBLICALWORSHIP.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Colossians</h3>
+    <p class="text-gray-400">Colossians</p>
+    <a href="https://globalchristians.org/pdf/colossians.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Compassion v Condemnation</h3>
+    <p class="text-gray-400">Compassion v Condemnation</p>
+    <a href="https://globalchristians.org/pdf/Compassion_v_Condemnation.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Confronting Crisis</h3>
+    <p class="text-gray-400">Confronting Crisis</p>
+    <a href="https://globalchristians.org/pdf/ConfrontingCrisis_SUP.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Covenant of Abraham</h3>
+    <p class="text-gray-400">Covenant of Abraham</p>
+    <a href="https://globalchristians.org/pdf/Covenant%20of%20Abraham.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Creative Bible Study</h3>
+    <p class="text-gray-400">Creative Bible Study</p>
+    <a href="https://globalchristians.org/pdf/creative-bible-study.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Cults, Sects and Heresies</h3>
+    <p class="text-gray-400">Cults, Sects and Heresies</p>
+    <a href="https://globalchristians.org/pdf/cults.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Cybermissions Articles</h3>
+    <p class="text-gray-400">Cybermissions Articles</p>
+    <a href="https://globalchristians.org/pdf/cybermissions_articles.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Biblical Theology</h3>
+    <p class="text-gray-400">Biblical Theology</p>
+    <a href="https://globalchristians.org/pdf/Biblical%20Theology.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Divine Division</h3>
+    <p class="text-gray-400">Divine Division</p>
+    <a href="https://globalchristians.org/pdf/Divine%20Division.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Biblical Theology</h3>
+    <p class="text-gray-400">Biblical Theology</p>
+    <a href="https://globalchristians.org/pdf/Biblical%20Theology.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Divine Dwelling - Psalm 91</h3>
+    <p class="text-gray-400">Divine Dwelling - Psalm 91</p>
+    <a href="https://globalchristians.org/pdf/Book%20Psalm%2091.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Divine Provisio</h3>
+    <p class="text-gray-400">Divine Provision</p>
+    <a href="https://globalchristians.org/pdf/DivineProvision.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Environmental Analysis</h3>
+    <p class="text-gray-400">Environmental Analysis</p>
+    <a href="https://globalchristians.org/pdf/Environmental%20Analysis.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Ephesians</h3>
+    <p class="text-gray-400">Ephesians</p>
+    <a href="https://globalchristians.org/pdf/ephesians.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-xl shadow-2xl">
+    <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Fear of God</h3>
+    <p class="text-gray-400">Fear of God</p>
+    <a href="https://globalchristians.org/pdf/FearofGodGibsonTribute.pdf" target="_blank" class="text-yellow-400 underline mt-4 block">Read PDF</a>
+</div>
+
+
+
+
+        <!-- Add more PDFs as needed -->
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-yellow-400 text-center py-8">
+        <p class="text-lg">&copy; 2025 Erik Hadri. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

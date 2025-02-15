@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Global Christians </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Navigation Bar -->
+   <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+      </a>
+      
+      <!-- Hamburger Button -->
+      <button id="menu-toggle" type="button" class="md:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="navbar">
+        <ul class="flex flex-col md:flex-row md:space-x-4 font-medium mt-4 md:mt-0 bg-gray-50 dark:bg-gray-800 md:bg-transparent md:dark:bg-transparent">
+          <li><a href="index.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Home</a></li>
+          <li><a href="email-courses.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Email Courses</a></li>
+          <li><a href="ebooks.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">E-books</a></li>
+          <li><a href="bible-studies.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Bible Studies</a></li>
+          <li><a href="articles.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Articles</a></li>
+          <li><a href="prayer.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Prayer</a></li>
+          <li><a href="contact.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+  
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+    });
+  </script>
+  
+
+
+    <!-- Hero Section -->
+    <section class="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-700 text-center px-6 py-24">
+        <!-- Parallax Background -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?church,worship'); filter: brightness(0.5);"></div>
+
+        <!-- Content Container with Glassmorphism Effect -->
+        <div class="relative bg-white/20 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-xl border border-white/40 max-w-3xl w-full">
+            <h1 class="text-4xl sm:text-7xl font-extrabold mb-6 text-yellow-400 drop-shadow-lg">
+                Contact <br class="hidden sm:block"> Us
+            </h1>
+            <p class="text-lg sm:text-2xl mb-6 font-light text-white">A place of faith, hope, and love.</p>
+            <a href="#contactforms"
+                class="relative inline-block bg-gradient-to-r from-yellow-500 to-yellow-400 text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold shadow-xl text-lg sm:text-xl transition-transform duration-300 hover:scale-105">
+                <span class="relative z-10">Contact Us</span>
+                <div class="absolute inset-0 bg-white opacity-20 rounded-full blur-lg"></div>
+            </a>
+        </div>
+    </section>
+
+   
+    <!-- Contact Form -->
+<section class="max-w-2xl mx-auto py-12 px-6">
+    <h1 id="contactforms" class="text-4xl font-bold text-yellow-400 mb-6 text-center">Contact</h1>
+
+    <form id="emailForm" class="bg-gray-800 p-8 rounded-lg shadow-lg space-y-6">
+        <div>
+            <label for="name" class="block text-lg font-semibold text-white">Your Name:</label>
+            <input type="text" id="name" name="name" required class="w-full p-3 mt-2 rounded-lg border border-gray-600 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        </div>
+
+        <div>
+            <label for="email" class="block text-lg font-semibold text-white">Your Email:</label>
+            <input type="email" id="email" name="email" required class="w-full p-3 mt-2 rounded-lg border border-gray-600 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        </div>
+
+        <div>
+            <label for="subject" class="block text-lg font-semibold text-white">Subject:</label>
+            <input type="text" id="subject" name="subject" required class="w-full p-3 mt-2 rounded-lg border border-gray-600 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        </div>
+
+        <div>
+            <label for="message" class="block text-lg font-semibold text-white">Message:</label>
+            <textarea id="message" name="message" required rows="4" class="w-full p-3 mt-2 rounded-lg border border-gray-600 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+        </div>
+
+        <div class="flex justify-center">
+            <button type="submit" class="px-6 py-3 bg-yellow-500 text-gray-900 font-semibold rounded-lg hover:bg-yellow-400 transition-colors duration-300">Send</button>
+        </div>
+    </form>
+
+    <p id="status" class="mt-4 text-center"></p>
+</section>
+
+<script>
+document.getElementById('emailForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get form data
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+    };
+
+    // Send data to the server
+    fetch('http://localhost:3000/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('status').textContent = 'Email sent successfully!';
+        document.getElementById('status').style.color = 'green';
+    })
+    .catch(error => {
+        document.getElementById('status').textContent = 'Error sending email.';
+        document.getElementById('status').style.color = 'red';
+    });
+});
+    </script>
+
+
+      <!-- Location & Map Section -->
+<section id="location" class="py-24 px-8 bg-gray-800">
+    <h2 class="text-6xl font-bold text-yellow-400 text-center mb-8">Find Us</h2>
+    <div class="text-center">
+        <p class="text-lg text-gray-400 mb-4">We are located at P.O. Box 40, Rhoadesville, VA 22542, USA.</p>
+        <iframe class="mx-auto rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.942238848551!2d-77.857883!3d38.226249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8194971f49e2b%3A0x6c8761b3284c1c82!2sP.O.%20Box%2040%2C%20Rhoadesville%2C%20VA%2022542%2C%20USA!5e0!3m2!1sen!2sus!4v1625156000704!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  
+
+   
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-yellow-400 text-center py-8">
+        <p class="text-lg">&copy; 2025 Erik Hadri. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Global Christians </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    
+        <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+      </a>
+      
+      <!-- Hamburger Button -->
+      <button id="menu-toggle" type="button" class="md:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="navbar">
+        <ul class="flex flex-col md:flex-row md:space-x-4 font-medium mt-4 md:mt-0 bg-gray-50 dark:bg-gray-800 md:bg-transparent md:dark:bg-transparent">
+          <li><a href="index.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Home</a></li>
+          <li><a href="email-courses.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Email Courses</a></li>
+          <li><a href="ebooks.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">E-books</a></li>
+          <li><a href="bible-studies.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Bible Studies</a></li>
+          <li><a href="articles.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Articles</a></li>
+          <li><a href="prayer.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Prayer</a></li>
+          <li><a href="contact.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+  
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+    });
+  </script>
+  
+
+    <!-- Hero Section -->
+    <section class="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-700 text-center px-6 py-24">
+        <!-- Parallax Background -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?church,worship'); filter: brightness(0.5);"></div>
+
+        <!-- Content Container with Glassmorphism Effect -->
+        <div class="relative bg-white/20 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-xl border border-white/40 max-w-3xl w-full">
+            <h1 class="text-4xl sm:text-7xl font-extrabold mb-6 text-yellow-400 drop-shadow-lg">
+                Listen <br class="hidden sm:block"> To Ebooks
+            </h1>
+            <p class="text-lg sm:text-2xl mb-6 font-light text-white">A place of faith, hope, and love.</p>
+            <a href="#ebooks"
+                class="relative inline-block bg-gradient-to-r from-yellow-500 to-yellow-400 text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold shadow-xl text-lg sm:text-xl transition-transform duration-300 hover:scale-105">
+                <span class="relative z-10">Listen to ebooks</span>
+                <div class="absolute inset-0 bg-white opacity-20 rounded-full blur-lg"></div>
+            </a>
+        </div>
+    </section>
+
+    
+
+
+
+    <section id="ebooks" class="py-24 px-8 bg-gray-800">
+        <h2 class="text-6xl font-bold text-yellow-400 text-center mb-8">E-Books</h2>
+    
+        <!-- E-Books List -->
+        <div id="ebookList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Books will be dynamically added here -->
+        </div>
+    </section>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const ebookList = document.getElementById("ebookList");
+    
+        // Predefined E-Books (Title and URL)
+        const ebooks = [
+            { name: "The Life of Abraham: Structure and Content", url: "https://media.thirdmill.org/mp3-32/FA01.mp3" },
+            { name: "The Life of Abraham: Modern Application", url: "https://media.thirdmill.org/mp3-32/FA03.mp3" },
+            { name: "Abraham and the Torch - Genesis 15:1-21", url: "https://example.com/understanding-the-bible.pdf" },
+            { name: "Introduction to Genesis, Part 1", url: "https://media.thirdmill.org/mp3-16/mer_kline.OTE1.mp3" },
+            { name: "What a creation - Genesis 1:1-2;2", url: "http://tapesfromscotland.org/Audio6/6697.mp3" },
+            { name: "Leviticus - Truth and Evangelism", url: "http://tapesfromscotland.org/Audio1/1046.mp3" },
+            { name: "Judges 1", url: "http://tapesfromscotland.org/Audio4/4724.mp3" },
+            { name: "A Doxology In The Darkness (Part 1A) - 1 Samuel 1", url: "https://storage.sermonaudio.com/com-sermonaudio-images/sermonaudioempty.mp3" },
+            { name: "Hannah's Faith - 1 Samuel 1:1-2:11", url: "https://storage.sermonaudio.com/com-sermonaudio-images/sermonaudioempty.mp3" },
+            { name: "1 Kings 1", url: "http://tapesfromscotland.org/Audio3/3626.mp3" },
+            { name: "1 Kings 3", url: "http://tapesfromscotland.org/Audio3/3628.mp3" },
+            { name: "1 Kings 2", url: "http://tapesfromscotland.org/Audio3/3627.mp3" },
+            { name: "1 & 2 Kings (overview) God Will Have A Witness", url: "https://media.thirdmill.org/mp3-16/022701.mp3" },
+            { name: "1 Kings 3:10-14 Wisdom", url: "https://media.thirdmill.org/mp3-16/030101.mp3" },
+            { name: "Solomon & the Temple", url: "https://storage.sermonaudio.com/com-sermonaudio-images/sermonaudioempty.mp3" },
+            { name: "Esther (MP3)", url: "http://tapesfromscotland.org/Audio6/6895.mp3" },
+            { name: "The Use of the Psalms in Cultivating Communion With God: Guidelines", url: "https://www.sg-audiotreasures.org/useofpsalms/02am_useofpsalms.mp3" },
+            { name: "Jim Hamilton on Typology in the Psalms (MP3)", url: "https://resources.briarwood.org/sermons/route66/116150.mp3" },
+            { name: "The Journey To Christ, The Promised One Psalms--The Book of Praise - Book of Psalms", url: "https://resources.briarwood.org/sermons/route66/116150.mp3" },
+            { name: "The Use of the Psalms in Cultivating Communion With God: Two Basic Questions", url: "https://www.sg-audiotreasures.org/useofpsalms/01am_useofpsalms.mp3" },
+            { name: "The Use of the Psalms in Cultivating Communion With God: Practical Counsels", url: "https://www.sg-audiotreasures.org/useofpsalms/03am_useofpsalms.mp3" },
+            { name: "Lamentations", url: "http://tapesfromscotland.org/Audio7/7809.mp3" },
+            { name: "Commentary on Jeremiah and Lamentations #8 - Jeremiah 2:25; Lamentations", url: "" },
+            { name: "Malachi 1", url: "http://tapesfromscotland.org/Audio1/1986.mp3" },
+            { name: "Malachi 1:6-14", url: "http://tapesfromscotland.org/Audio2/2079.mp3" },
+            { name: "Malachi 1:6-14", url: "http://tapesfromscotland.org/Audio5/5304.mp3" },
+        ];
+    
+        // Load e-books into the page
+        ebooks.forEach(ebook => {
+            const pdfElement = document.createElement("div");
+            pdfElement.className = "bg-gray-900 p-6 rounded-xl shadow-2xl text-center";
+            pdfElement.innerHTML = `
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">${ebook.name}</h3>
+                <a href="${ebook.url}" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">
+                     E-Book
+                </a>
+            `;
+            ebookList.appendChild(pdfElement);
+        });
+    });
+    </script>
+    
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-yellow-400 text-center py-8">
+        <p class="text-lg">&copy; 2025 Erik Hadri. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

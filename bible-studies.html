@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Global Christians </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Navigation Bar -->
+     <!-- Navigation Bar -->
+       <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+      </a>
+      
+      <!-- Hamburger Button -->
+      <button id="menu-toggle" type="button" class="md:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="navbar">
+        <ul class="flex flex-col md:flex-row md:space-x-4 font-medium mt-4 md:mt-0 bg-gray-50 dark:bg-gray-800 md:bg-transparent md:dark:bg-transparent">
+          <li><a href="index.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Home</a></li>
+          <li><a href="email-courses.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Email Courses</a></li>
+          <li><a href="ebooks.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">E-books</a></li>
+          <li><a href="bible-studies.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Bible Studies</a></li>
+          <li><a href="articles.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Articles</a></li>
+          <li><a href="prayer.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Prayer</a></li>
+          <li><a href="contact.html" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+  
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+    });
+  </script>
+  
+
+
+    <!-- Hero Section -->
+    <section class="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-700 text-center px-6 py-24">
+        <!-- Parallax Background -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?church,worship'); filter: brightness(0.5);"></div>
+
+        <!-- Content Container with Glassmorphism Effect -->
+        <div class="relative bg-white/20 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-xl border border-white/40 max-w-3xl w-full">
+            <h1 class="text-4xl sm:text-7xl font-extrabold mb-6 text-yellow-400 drop-shadow-lg">
+                Read <br class="hidden sm:block"> Bible Studies
+            </h1>
+            <p class="text-lg sm:text-2xl mb-6 font-light text-white">A place of faith, hope, and love.</p>
+            <a href="bible-studies.html#bible-studies"
+                class="relative inline-block bg-gradient-to-r from-yellow-500 to-yellow-400 text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold shadow-xl text-lg sm:text-xl transition-transform duration-300 hover:scale-105">
+                <span class="relative z-10">Read Bible Studies</span>
+                <div class="absolute inset-0 bg-white opacity-20 rounded-full blur-lg"></div>
+            </a>
+        </div>
+    </section>
+
+  
+  
+
+     <!-- Bible Study Articles Section -->
+     <section id="bible-studies" class="py-24 px-8 bg-gray-800">
+        <h2 class="text-6xl font-bold text-yellow-400 text-center mb-8">Bible Study Articles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">The Gospel of Luke 61 Studies</h3>
+                <p class="text-gray-400 mb-4">The Gospel of Luke 61 Studies</p>
+                <a href="https://globalchristians.org/luke/assets/the_gospel_of_luke.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">isaiah 40-66 bible studies</h3>
+                <p class="text-gray-400 mb-4">isaiah_40-66_bible_studies</p>
+                <a href="https://globalchristians.org/isaiah/assets/isaiah_40-66_bible_studies.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Time Management For Christian Disciples</h3>
+                <p class="text-gray-400 mb-4">Time Management For Christian Disciples</p>
+                <a href="https://globalchristians.org/time/Time_Management_For_Christian_Disciples.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">living in the end times study guide</h3>
+                <p class="text-gray-400 mb-4">living_in_the_end_times_study_guide.pdf</p>
+                <a href="https://globalchristians.org/pdf/living_in_the_end_times_study_guide.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">fruit of the spirit study guide</h3>
+                <p class="text-gray-400 mb-4">fruit of the spirit study guide</p>
+                <a href="https://globalchristians.org/ebooks/fruit_of_the_spirit_study_guide.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Kingdom of God 1 - Introduction.pdfs</h3>
+                <p class="text-gray-400 mb-4">Kingdom of God 1 - Introduction</p>
+                <a href="https://globalchristians.org/kog/Kingdom%20of%20God%201%20-%20Introduction.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Living In The Kingdom 2 Throne of God</h3>
+                <p class="text-gray-400 mb-4">Living In The Kingdom 2 Throne of God</p>
+                <a href="https://globalchristians.org/kog/Living%20In%20The%20Kingdom%202%20Throne%20of%20God.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Living In The Kingdom 3 The Holy Spirit</h3>
+                <p class="text-gray-400 mb-4">Living In The Kingdom 3 The Holy Spirit</p>
+                <a href="https://globalchristians.org/kog/Living%20In%20The%20Kingdom%203%20The%20Holy%20Spirit.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">The Parables Of The Kingdom Living In The Kingdom 4</h3>
+                <p class="text-gray-400 mb-4">The Parables Of The Kingdom Living In The Kingdom 4</p>
+                <a href="https://globalchristians.org/kog/The%20Parables%20Of%20The%20Kingdom%20Living%20In%20The%20Kingdom%204.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Living In The Kingdom 5</h3>
+                <p class="text-gray-400 mb-4">Living In The Kingdom 5</p>
+                <a href="https://globalchristians.org/kog/Living%20In%20The%20Kingdom%205%20-%20Prayers%20Of%20The%20Kingdom.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Living In The Kingdom 6 </h3>
+                <p class="text-gray-400 mb-4">Time Management For Christian Disciples</p>
+                <a href="https://globalchristians.org/kog/Living%20In%20The%20Kingdom%206%20-%20The%20Cross%20and%20The%20%20Kingdom%201.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Living in The Kingdom Part 7 The Cross and The Blood</h3>
+                <p class="text-gray-400 mb-4">Living in The Kingdom Part 7 The Cross and The Blood</p>
+                <a href="https://globalchristians.org/kog/Living%20in%20The%20Kingdom%20Part%207%20The%20Cross%20and%20The%20Blood.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">8 The Powers of The Kingdom</h3>
+                <p class="text-gray-400 mb-4">8_The_Powers_of_The-Kingdom</p>
+                <a href="https://globalchristians.org/kog/8_The_Powers_of_The-Kingdom.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Walking In The Kingdom </h3>
+                <p class="text-gray-400 mb-4">9 Walking In The Kingdom</p>
+                <a href="https://globalchristians.org/kog/9_Walking_In_The_Kingdom.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">10 The Kingdom Is Opposed.</h3>
+                <p class="text-gray-400 mb-4">10_The_Kingdom_Is_Opposed.</p>
+                <a href="https://globalchristians.org/kog/10_The_Kingdom_Is_Opposed.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-2xl text-center">
+                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">11 The Kingdom Is Victorious.</h3>
+                <p class="text-gray-400 mb-4">11 The Kingdom Is Victorious.</p>
+                <a href="https://globalchristians.org/kog/11_The-Kingdom-Is-Victorious.pdf" target="_blank" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow-lg hover:bg-yellow-400 transition">Read Study</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-yellow-400 text-center py-8">
+        <p class="text-lg">&copy; 2025 Erik Hadri. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
